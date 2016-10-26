@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical"
+	tools:context="tic_tac_toe.com.gamettt.MainActivity">
+
+	<tic_tac_toe.com.gamettt.GameView
+		android:id="@+id/chess"
+		android:layout_width="300dp"
+		android:layout_height="300dp"
+		android:layout_marginTop="14dp"
+		android:layout_gravity="center"
+		android:background="#cdcdcd"/>
+
+	<TextView
+		android:id="@+id/tvCircleColor"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center"
+		android:textSize="22sp"/>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical">
+
+		<Button
+			android:id="@+id/btnReset"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_margin="10dp"
+			android:text="重玩"
+			android:textSize="16sp"/>
+
+		<Button
+			android:id="@+id/btnBack"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:text="后退"
+			android:textSize="16sp"/>
+
+		<Button
+			android:id="@+id/btnRedo"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:text="前进"
+			android:textSize="16sp"/>
+	</LinearLayout>
+
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:gravity="center_vertical">
+
+		<Button
+			android:id="@+id/btnSave"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:text="保存"
+			android:textSize="16sp"/>
+
+		<Button
+			android:id="@+id/btnLoad"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:text="加载保存状态"
+			android:textSize="16sp"/>
+
+		<Button
+			android:id="@+id/btnSetting"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginLeft="10dp"
+			android:text="棋盘设定"
+			android:textSize="16sp"/>
+
+	</LinearLayout>
+
+</LinearLayout>
